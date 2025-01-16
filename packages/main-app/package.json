@@ -1,0 +1,27 @@
+{
+  "name": "main-app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --force --host",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "@micro-zoe/micro-app": "1.0.0-rc.18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.1.7",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "npm-run-all2": "^6.1.2",
+    "typescript": "~5.6.3",
+    "vite": "5.x",
+    "vue-tsc": "^2.1.10"
+  }
+}

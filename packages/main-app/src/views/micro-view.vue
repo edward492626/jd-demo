@@ -4,6 +4,7 @@
       <button @click="handleRefresh">刷新</button>
     </div>
     <div class="main">
+      <div class="header">head</div>
       <micro-app
         name="child"
         :url="url"
@@ -62,9 +63,19 @@ const handleRefresh = (e: any) => {
   justify-content: center;
   background-color: antiquewhite;
 }
+.header {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+}
 .main {
   width: calc(100% - 300px);
   height: 100%;
   /* background-color: azure; */
+}
+.main micro-app {
+  height: calc(100% - 48px);
 }
 </style>

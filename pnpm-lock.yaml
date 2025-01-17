@@ -10,7 +10,7 @@ importers:
     devDependencies:
       lerna:
         specifier: ^8.1.2
-        version: 8.1.2
+        version: 8.1.2(encoding@0.1.13)
 
   packages/main-app:
     dependencies:
@@ -22,17 +22,17 @@ importers:
         version: 3.5.13(typescript@5.6.3)
       vue-router:
         specifier: ^4.5.0
-        version: 4.5.0(vue@3.5.13)
+        version: 4.5.0(vue@3.5.13(typescript@5.6.3))
     devDependencies:
       '@types/node':
         specifier: ^22.1.7
         version: 22.10.6
       '@vitejs/plugin-vue':
         specifier: ^5.2.1
-        version: 5.2.1(vite@5.4.11)(vue@3.5.13)
+        version: 5.2.1(vite@5.4.11(@types/node@22.10.6))(vue@3.5.13(typescript@5.6.3))
       '@vue/tsconfig':
         specifier: ^0.7.0
-        version: 0.7.0(typescript@5.6.3)(vue@3.5.13)
+        version: 0.7.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
       npm-run-all2:
         specifier: ^6.1.2
         version: 6.1.2
@@ -48,25 +48,73 @@ importers:
 
   packages/sub-app:
     dependencies:
+      '@ag-grid-community/client-side-row-model':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-community/core':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-community/styles':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-community/vue3':
+        specifier: 30.2.1
+        version: 30.2.1(typescript@5.6.3)
+      '@ag-grid-enterprise/advanced-filter':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-enterprise/column-tool-panel':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-enterprise/core':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-enterprise/excel-export':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-enterprise/filter-tool-panel':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-enterprise/menu':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-enterprise/multi-filter':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-enterprise/range-selection':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-enterprise/row-grouping':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-enterprise/set-filter':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-enterprise/side-bar':
+        specifier: 30.2.1
+        version: 30.2.1
+      '@ag-grid-enterprise/status-bar':
+        specifier: 30.2.1
+        version: 30.2.1
       ant-design-vue:
         specifier: ^4.x
-        version: 4.1.2(vue@3.5.13)
+        version: 4.1.2(vue@3.5.13(typescript@5.6.3))
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.6.3)
       vue-router:
         specifier: ^4.5.0
-        version: 4.5.0(vue@3.5.13)
+        version: 4.5.0(vue@3.5.13(typescript@5.6.3))
     devDependencies:
       '@types/node':
         specifier: ^22.1.7
         version: 22.10.6
       '@vitejs/plugin-vue':
         specifier: ^5.2.1
-        version: 5.2.1(vite@5.4.11)(vue@3.5.13)
+        version: 5.2.1(vite@5.4.11(@types/node@22.10.6))(vue@3.5.13(typescript@5.6.3))
       '@vue/tsconfig':
         specifier: ^0.7.0
-        version: 0.7.0(typescript@5.6.3)(vue@3.5.13)
+        version: 0.7.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
       npm-run-all2:
         specifier: ^6.1.2
         version: 6.1.2
@@ -81,6 +129,57 @@ importers:
         version: 2.2.0(typescript@5.6.3)
 
 packages:
+
+  '@ag-grid-community/client-side-row-model@30.2.1':
+    resolution: {integrity: sha512-LeFAsq2RuDXwjoUVLqlUgBYTHyCbyQozaQ4JY8SzBEABc8bOanIfsY3YONUckn+KWtRUrH5nGYA8bBeGrc20MQ==}
+
+  '@ag-grid-community/core@30.2.1':
+    resolution: {integrity: sha512-jGRBfRFsLwxch8GJGjbVI2FVbB+/fy1s4mm8//+kOkcPFlq4BbLFELvU4Kupwk1YkhduxUC50GTYyFzmF0rSIQ==}
+
+  '@ag-grid-community/csv-export@30.2.1':
+    resolution: {integrity: sha512-0ogeKd3txFnkAvhReXm1L9vhIN+s4vP0iDt5JOkbNe1OorCCKDmNSrsjlIR7Sbf3yo6qZ1G3Vo6oPfNG3Cnu3A==}
+
+  '@ag-grid-community/styles@30.2.1':
+    resolution: {integrity: sha512-Tvs7Rtz4aSA5H2Vlerh6BCLIEa93jR0KLVRVwYOIHzwaNxovKYeMs/e8fr2comxsTAPxqozrMpzQ8Oa/RHKC7g==}
+
+  '@ag-grid-community/vue3@30.2.1':
+    resolution: {integrity: sha512-C8RdJXa6S9cI+rxYOOSkzgxEVnK9CgmwmVkFOsVPlNxrDwQEHUNAWEj7K4xo/612PzSv7MVugMUAXBUHcbH7QQ==}
+
+  '@ag-grid-enterprise/advanced-filter@30.2.1':
+    resolution: {integrity: sha512-P+oDdXRu1ZzpStBOuD+Ex/8snoEdHt+zJ2y07zBF09YgSlEWQi137Lc88hiowqMKoqP7c7a5J+rYXGqhffrtkg==}
+
+  '@ag-grid-enterprise/column-tool-panel@30.2.1':
+    resolution: {integrity: sha512-w4Ed7kKExl5hBhojq3VirK+Qwhp3vfPbLeTnM1AC1unqS6sWAnDQsZb6i9oXKmtMsobDVki+2lMncU+Y0pq44Q==}
+
+  '@ag-grid-enterprise/core@30.2.1':
+    resolution: {integrity: sha512-POVdYwMho+WPQ1wrNwQwX4ihGvdq+UbLIHQfWnnZn5c2FLFiUmlxAhCZAXXiOeXq5MDHBKqKrTRemb9TUbBRcg==}
+
+  '@ag-grid-enterprise/excel-export@30.2.1':
+    resolution: {integrity: sha512-JFNRZz+EKqYzjwOI6dKHsPS8uaVul1xC8KA7krjWRnRJWKwK9SdXkPt5+HmADa3L6jIAC+GdEtu8XIxhUpeS+g==}
+
+  '@ag-grid-enterprise/filter-tool-panel@30.2.1':
+    resolution: {integrity: sha512-oplqfCSyCYAhYaoGYcXQMova07ElohT58QVYRtBPOjKtTIGhfqHaQuKP1fNTqIEJL0vQMUbxQJJ3QUf0+jTJ5A==}
+
+  '@ag-grid-enterprise/menu@30.2.1':
+    resolution: {integrity: sha512-8m0pAxC7h1PHNlxrBstmWB0GHXWe2G4jrwf+rRrwhgd8rntP+bedcJCjh0oveA/BJO+Jq/k6TpYdW7ndX+yIoQ==}
+
+  '@ag-grid-enterprise/multi-filter@30.2.1':
+    resolution: {integrity: sha512-lbZnaD+KxTW2lHjPp1+Hu2swX6PGnkN4SzX1lZDoSl8AsdDSxDQsHjiA3sTM5tj7bI7BmIPmqBA/kHsG9n2+Lw==}
+
+  '@ag-grid-enterprise/range-selection@30.2.1':
+    resolution: {integrity: sha512-zY/yHnrWd5RLXP2QfCYyUV6VZK76NrnHwKZrsnN4SBpHSI3dV2yO4GVJGu6SVEJM+6H1yNqTriJjA/hTPfmuLQ==}
+
+  '@ag-grid-enterprise/row-grouping@30.2.1':
+    resolution: {integrity: sha512-sjcSjkaP0B+JqhH7GyRo8FA1920Aj58ewZbkXgiqJaU+VvpvwqhpdNNnT0wGaZgK6OYPuBL0IzQZ1uq0sTK0kw==}
+
+  '@ag-grid-enterprise/set-filter@30.2.1':
+    resolution: {integrity: sha512-VsrAzj1I21CKWorcxuafmyW3MdTgZ/Va3/jkB/qRStA3WaePKHlHG3FwfmzDDXt0uobkTgXyVcLkLMwYC7xiXg==}
+
+  '@ag-grid-enterprise/side-bar@30.2.1':
+    resolution: {integrity: sha512-1uFLxMiQumzsebow+RFHyai8Z9PZsMvMINsqDva+64BADvtdo76l6xXIFqZ61WUm8Til2LTRPOoGC4S4Ji6eaQ==}
+
+  '@ag-grid-enterprise/status-bar@30.2.1':
+    resolution: {integrity: sha512-UXuq1iB3DVWt2iPAOZ7Q4Ykp19627Dm0AcmzNFWL3vKgh/7F3k/Fg4Y7p5Nx0njXeR8dbLBAskkDspRmApOXaw==}
 
   '@ant-design/colors@6.0.0':
     resolution: {integrity: sha512-qAZRvPzfdWHtfameEGP2Qvuf838NhergR35o+EuVyB5XvSA98xod5r4utvi4TJ3ywmevm290g9nsCG5MryrdWQ==}
@@ -511,51 +610,61 @@ packages:
     resolution: {integrity: sha512-PaMRNBSqCx7K3Wc9QZkFx5+CX27WFpAMxJNiYGAXfmMIKC7jstlr32UhTgK6T07OtqR+wYlWm9IxzennjnvdJg==}
     cpu: [arm]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm-musleabihf@4.30.1':
     resolution: {integrity: sha512-B8Rcyj9AV7ZlEFqvB5BubG5iO6ANDsRKlhIxySXcF1axXYUyqwBok+XZPgIYGBgs7LDXfWfifxhw0Ik57T0Yug==}
     cpu: [arm]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-arm64-gnu@4.30.1':
     resolution: {integrity: sha512-hqVyueGxAj3cBKrAI4aFHLV+h0Lv5VgWZs9CUGqr1z0fZtlADVV1YPOij6AhcK5An33EXaxnDLmJdQikcn5NEw==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.30.1':
     resolution: {integrity: sha512-i4Ab2vnvS1AE1PyOIGp2kXni69gU2DAUVt6FSXeIqUCPIR3ZlheMW3oP2JkukDfu3PsexYRbOiJrY+yVNSk9oA==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-loongarch64-gnu@4.30.1':
     resolution: {integrity: sha512-fARcF5g296snX0oLGkVxPmysetwUk2zmHcca+e9ObOovBR++9ZPOhqFUM61UUZ2EYpXVPN1redgqVoBB34nTpQ==}
     cpu: [loong64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-powerpc64le-gnu@4.30.1':
     resolution: {integrity: sha512-GLrZraoO3wVT4uFXh67ElpwQY0DIygxdv0BNW9Hkm3X34wu+BkqrDrkcsIapAY+N2ATEbvak0XQ9gxZtCIA5Rw==}
     cpu: [ppc64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-riscv64-gnu@4.30.1':
     resolution: {integrity: sha512-0WKLaAUUHKBtll0wvOmh6yh3S0wSU9+yas923JIChfxOaaBarmb/lBKPF0w/+jTVozFnOXJeRGZ8NvOxvk/jcw==}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-s390x-gnu@4.30.1':
     resolution: {integrity: sha512-GWFs97Ruxo5Bt+cvVTQkOJ6TIx0xJDD/bMAOXWJg8TCSTEK8RnFeOeiFTxKniTc4vMIaWvCplMAFBt9miGxgkA==}
     cpu: [s390x]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-gnu@4.30.1':
     resolution: {integrity: sha512-UtgGb7QGgXDIO+tqqJ5oZRGHsDLO8SlpE4MhqpY9Llpzi5rJMvrK6ZGhsRCST2abZdBqIBeXW6WPD5fGK5SDwg==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.30.1':
     resolution: {integrity: sha512-V9U8Ey2UqmQsBT+xTOeMzPzwDzyXmnAoO4edZhL7INkwQcaW1Ckv3WJX3qrrp/VHaDkEWIBWhRwP47r8cdrOow==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-win32-arm64-msvc@4.30.1':
     resolution: {integrity: sha512-WabtHWiPaFF47W3PkHnjbmWawnX/aE57K47ZDT1BXTS5GgrBUEpvOzq0FI0V/UYzQJgdb8XlhVNH8/fwV8xDjw==}
@@ -2788,13 +2897,96 @@ packages:
 
 snapshots:
 
+  '@ag-grid-community/client-side-row-model@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+
+  '@ag-grid-community/core@30.2.1': {}
+
+  '@ag-grid-community/csv-export@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+
+  '@ag-grid-community/styles@30.2.1': {}
+
+  '@ag-grid-community/vue3@30.2.1(typescript@5.6.3)':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+      vue: 3.5.13(typescript@5.6.3)
+    transitivePeerDependencies:
+      - typescript
+
+  '@ag-grid-enterprise/advanced-filter@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+      '@ag-grid-enterprise/core': 30.2.1
+
+  '@ag-grid-enterprise/column-tool-panel@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+      '@ag-grid-enterprise/core': 30.2.1
+      '@ag-grid-enterprise/row-grouping': 30.2.1
+      '@ag-grid-enterprise/side-bar': 30.2.1
+
+  '@ag-grid-enterprise/core@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+
+  '@ag-grid-enterprise/excel-export@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+      '@ag-grid-community/csv-export': 30.2.1
+      '@ag-grid-enterprise/core': 30.2.1
+
+  '@ag-grid-enterprise/filter-tool-panel@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+      '@ag-grid-enterprise/core': 30.2.1
+      '@ag-grid-enterprise/side-bar': 30.2.1
+
+  '@ag-grid-enterprise/menu@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+      '@ag-grid-enterprise/column-tool-panel': 30.2.1
+      '@ag-grid-enterprise/core': 30.2.1
+
+  '@ag-grid-enterprise/multi-filter@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+      '@ag-grid-enterprise/core': 30.2.1
+
+  '@ag-grid-enterprise/range-selection@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+      '@ag-grid-enterprise/core': 30.2.1
+
+  '@ag-grid-enterprise/row-grouping@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+      '@ag-grid-enterprise/core': 30.2.1
+
+  '@ag-grid-enterprise/set-filter@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+      '@ag-grid-enterprise/core': 30.2.1
+
+  '@ag-grid-enterprise/side-bar@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+      '@ag-grid-enterprise/core': 30.2.1
+
+  '@ag-grid-enterprise/status-bar@30.2.1':
+    dependencies:
+      '@ag-grid-community/core': 30.2.1
+      '@ag-grid-enterprise/core': 30.2.1
+
   '@ant-design/colors@6.0.0':
     dependencies:
       '@ctrl/tinycolor': 3.6.1
 
   '@ant-design/icons-svg@4.4.2': {}
 
-  '@ant-design/icons-vue@7.0.1(vue@3.5.13)':
+  '@ant-design/icons-vue@7.0.1(vue@3.5.13(typescript@5.6.3))':
     dependencies:
       '@ant-design/colors': 6.0.0
       '@ant-design/icons-svg': 4.4.2
@@ -2922,12 +3114,12 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
-  '@lerna/create@8.1.2(typescript@5.4.2)':
+  '@lerna/create@8.1.2(encoding@0.1.13)(typescript@5.4.2)':
     dependencies:
       '@npmcli/run-script': 7.0.2
       '@nx/devkit': 18.1.1(nx@18.1.1)
       '@octokit/plugin-enterprise-rest': 6.0.1
-      '@octokit/rest': 19.0.11
+      '@octokit/rest': 19.0.11(encoding@0.1.13)
       byte-size: 8.1.1
       chalk: 4.1.0
       clone-deep: 4.0.1
@@ -2957,7 +3149,7 @@ snapshots:
       make-dir: 4.0.0
       minimatch: 3.0.5
       multimatch: 5.0.0
-      node-fetch: 2.6.7
+      node-fetch: 2.6.7(encoding@0.1.13)
       npm-package-arg: 8.1.1
       npm-packlist: 5.1.1
       npm-registry-fetch: 14.0.5
@@ -3118,11 +3310,11 @@ snapshots:
 
   '@octokit/auth-token@3.0.4': {}
 
-  '@octokit/core@4.2.4':
+  '@octokit/core@4.2.4(encoding@0.1.13)':
     dependencies:
       '@octokit/auth-token': 3.0.4
-      '@octokit/graphql': 5.0.6
-      '@octokit/request': 6.2.8
+      '@octokit/graphql': 5.0.6(encoding@0.1.13)
+      '@octokit/request': 6.2.8(encoding@0.1.13)
       '@octokit/request-error': 3.0.3
       '@octokit/types': 9.3.2
       before-after-hook: 2.2.3
@@ -3136,9 +3328,9 @@ snapshots:
       is-plain-object: 5.0.0
       universal-user-agent: 6.0.1
 
-  '@octokit/graphql@5.0.6':
+  '@octokit/graphql@5.0.6(encoding@0.1.13)':
     dependencies:
-      '@octokit/request': 6.2.8
+      '@octokit/request': 6.2.8(encoding@0.1.13)
       '@octokit/types': 9.3.2
       universal-user-agent: 6.0.1
     transitivePeerDependencies:
@@ -3148,19 +3340,19 @@ snapshots:
 
   '@octokit/plugin-enterprise-rest@6.0.1': {}
 
-  '@octokit/plugin-paginate-rest@6.1.2(@octokit/core@4.2.4)':
+  '@octokit/plugin-paginate-rest@6.1.2(@octokit/core@4.2.4(encoding@0.1.13))':
     dependencies:
-      '@octokit/core': 4.2.4
+      '@octokit/core': 4.2.4(encoding@0.1.13)
       '@octokit/tsconfig': 1.0.2
       '@octokit/types': 9.3.2
 
-  '@octokit/plugin-request-log@1.0.4(@octokit/core@4.2.4)':
+  '@octokit/plugin-request-log@1.0.4(@octokit/core@4.2.4(encoding@0.1.13))':
     dependencies:
-      '@octokit/core': 4.2.4
+      '@octokit/core': 4.2.4(encoding@0.1.13)
 
-  '@octokit/plugin-rest-endpoint-methods@7.2.3(@octokit/core@4.2.4)':
+  '@octokit/plugin-rest-endpoint-methods@7.2.3(@octokit/core@4.2.4(encoding@0.1.13))':
     dependencies:
-      '@octokit/core': 4.2.4
+      '@octokit/core': 4.2.4(encoding@0.1.13)
       '@octokit/types': 10.0.0
 
   '@octokit/request-error@3.0.3':
@@ -3169,23 +3361,23 @@ snapshots:
       deprecation: 2.3.1
       once: 1.4.0
 
-  '@octokit/request@6.2.8':
+  '@octokit/request@6.2.8(encoding@0.1.13)':
     dependencies:
       '@octokit/endpoint': 7.0.6
       '@octokit/request-error': 3.0.3
       '@octokit/types': 9.3.2
       is-plain-object: 5.0.0
-      node-fetch: 2.6.7
+      node-fetch: 2.6.7(encoding@0.1.13)
       universal-user-agent: 6.0.1
     transitivePeerDependencies:
       - encoding
 
-  '@octokit/rest@19.0.11':
+  '@octokit/rest@19.0.11(encoding@0.1.13)':
     dependencies:
-      '@octokit/core': 4.2.4
-      '@octokit/plugin-paginate-rest': 6.1.2(@octokit/core@4.2.4)
-      '@octokit/plugin-request-log': 1.0.4(@octokit/core@4.2.4)
-      '@octokit/plugin-rest-endpoint-methods': 7.2.3(@octokit/core@4.2.4)
+      '@octokit/core': 4.2.4(encoding@0.1.13)
+      '@octokit/plugin-paginate-rest': 6.1.2(@octokit/core@4.2.4(encoding@0.1.13))
+      '@octokit/plugin-request-log': 1.0.4(@octokit/core@4.2.4(encoding@0.1.13))
+      '@octokit/plugin-rest-endpoint-methods': 7.2.3(@octokit/core@4.2.4(encoding@0.1.13))
     transitivePeerDependencies:
       - encoding
 
@@ -3345,7 +3537,7 @@ snapshots:
 
   '@types/normalize-package-data@2.4.4': {}
 
-  '@vitejs/plugin-vue@5.2.1(vite@5.4.11)(vue@3.5.13)':
+  '@vitejs/plugin-vue@5.2.1(vite@5.4.11(@types/node@22.10.6))(vue@3.5.13(typescript@5.6.3))':
     dependencies:
       vite: 5.4.11(@types/node@22.10.6)
       vue: 3.5.13(typescript@5.6.3)
@@ -3409,6 +3601,7 @@ snapshots:
       minimatch: 9.0.3
       muggle-string: 0.4.1
       path-browserify: 1.0.1
+    optionalDependencies:
       typescript: 5.6.3
 
   '@vue/reactivity@3.5.13':
@@ -3427,7 +3620,7 @@ snapshots:
       '@vue/shared': 3.5.13
       csstype: 3.1.3
 
-  '@vue/server-renderer@3.5.13(vue@3.5.13)':
+  '@vue/server-renderer@3.5.13(vue@3.5.13(typescript@5.6.3))':
     dependencies:
       '@vue/compiler-ssr': 3.5.13
       '@vue/shared': 3.5.13
@@ -3435,8 +3628,8 @@ snapshots:
 
   '@vue/shared@3.5.13': {}
 
-  '@vue/tsconfig@0.7.0(typescript@5.6.3)(vue@3.5.13)':
-    dependencies:
+  '@vue/tsconfig@0.7.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))':
+    optionalDependencies:
       typescript: 5.6.3
       vue: 3.5.13(typescript@5.6.3)
 
@@ -3505,10 +3698,10 @@ snapshots:
 
   ansi-styles@6.2.1: {}
 
-  ant-design-vue@4.1.2(vue@3.5.13):
+  ant-design-vue@4.1.2(vue@3.5.13(typescript@5.6.3)):
     dependencies:
       '@ant-design/colors': 6.0.0
-      '@ant-design/icons-vue': 7.0.1(vue@3.5.13)
+      '@ant-design/icons-vue': 7.0.1(vue@3.5.13(typescript@5.6.3))
       '@babel/runtime': 7.24.0
       '@ctrl/tinycolor': 3.6.1
       '@emotion/hash': 0.9.1
@@ -3528,7 +3721,7 @@ snapshots:
       stylis: 4.3.1
       throttle-debounce: 5.0.0
       vue: 3.5.13(typescript@5.6.3)
-      vue-types: 3.0.2(vue@3.5.13)
+      vue-types: 3.0.2(vue@3.5.13(typescript@5.6.3))
       warning: 4.0.3
 
   aproba@2.0.0: {}
@@ -3809,6 +4002,7 @@ snapshots:
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
+    optionalDependencies:
       typescript: 5.4.2
 
   cross-spawn@7.0.3:
@@ -4401,13 +4595,13 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  lerna@8.1.2:
+  lerna@8.1.2(encoding@0.1.13):
     dependencies:
-      '@lerna/create': 8.1.2(typescript@5.4.2)
+      '@lerna/create': 8.1.2(encoding@0.1.13)(typescript@5.4.2)
       '@npmcli/run-script': 7.0.2
       '@nx/devkit': 18.1.1(nx@18.1.1)
       '@octokit/plugin-enterprise-rest': 6.0.1
-      '@octokit/rest': 19.0.11
+      '@octokit/rest': 19.0.11(encoding@0.1.13)
       byte-size: 8.1.1
       chalk: 4.1.0
       clone-deep: 4.0.1
@@ -4443,7 +4637,7 @@ snapshots:
       make-dir: 4.0.0
       minimatch: 3.0.5
       multimatch: 5.0.0
-      node-fetch: 2.6.7
+      node-fetch: 2.6.7(encoding@0.1.13)
       npm-package-arg: 8.1.1
       npm-packlist: 5.1.1
       npm-registry-fetch: 14.0.5
@@ -4749,9 +4943,11 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  node-fetch@2.6.7:
+  node-fetch@2.6.7(encoding@0.1.13):
     dependencies:
       whatwg-url: 5.0.0
+    optionalDependencies:
+      encoding: 0.1.13
 
   node-gyp@10.0.1:
     dependencies:
@@ -5599,16 +5795,16 @@ snapshots:
 
   vite@5.4.11(@types/node@22.10.6):
     dependencies:
-      '@types/node': 22.10.6
       esbuild: 0.21.5
       postcss: 8.5.1
       rollup: 4.30.1
     optionalDependencies:
+      '@types/node': 22.10.6
       fsevents: 2.3.3
 
   vscode-uri@3.0.8: {}
 
-  vue-router@4.5.0(vue@3.5.13):
+  vue-router@4.5.0(vue@3.5.13(typescript@5.6.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.13(typescript@5.6.3)
@@ -5619,7 +5815,7 @@ snapshots:
       '@vue/language-core': 2.2.0(typescript@5.6.3)
       typescript: 5.6.3
 
-  vue-types@3.0.2(vue@3.5.13):
+  vue-types@3.0.2(vue@3.5.13(typescript@5.6.3)):
     dependencies:
       is-plain-object: 3.0.1
       vue: 3.5.13(typescript@5.6.3)
@@ -5629,8 +5825,9 @@ snapshots:
       '@vue/compiler-dom': 3.5.13
       '@vue/compiler-sfc': 3.5.13
       '@vue/runtime-dom': 3.5.13
-      '@vue/server-renderer': 3.5.13(vue@3.5.13)
+      '@vue/server-renderer': 3.5.13(vue@3.5.13(typescript@5.6.3))
       '@vue/shared': 3.5.13
+    optionalDependencies:
       typescript: 5.6.3
 
   warning@4.0.3:
